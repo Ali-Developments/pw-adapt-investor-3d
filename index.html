@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PW-ADAPT — a conceptual modular water-treatment prototype presented through an interactive engineering and digital-twin experience."
+    />
+    <meta name="theme-color" content="#061521" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>PW-ADAPT — Intelligent Water Treatment. Connected by Design.</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("pw-adapt-theme");
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          /* default dark */
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-BKZs6H19.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DmHAfpZP.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
